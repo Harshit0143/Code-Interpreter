@@ -2,7 +2,7 @@
 An interpreter for restricted syntax to understand working of the Python Interpreter
 
 
-For the allowed Syntax see the Problem.pdf
+# For the allowed Syntax see the Problem.pdf
 
 **** Variable names should be alpha strings only
 
@@ -124,7 +124,7 @@ c  =  1
 
 
 
-Example2
+# Example2
 i = 0
 while i < 3 :
     j = 1
