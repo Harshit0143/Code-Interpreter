@@ -38,6 +38,98 @@ the code will not provide final result if stuck in a while loop that doesn't ter
 
 SAMPLE TESTCASES AND EXPLANATION :
 # Test Cases
+
+### Case for jump of more than one tab simultaneously.
+x = 1                                   0  x = 1  <br>
+z = -4                                  1  z = -4 <br>
+while x < 10 :                          2  BLE 10, x , 8 <br>
+    x = x + 2                           3  x = x + 2 <br>
+    while z < x :                       4  BLE x, z  , 7 <br>
+        z = z + 1                       5  z = z + 1 <br>
+c = 1 ### change of two tab             6  branch 4 <br>
+                                        7  branch 2 <br>
+                                        8  c = 1 <br>
+
+RESULT <br>
+Instruction List: <br>
+0 x = 1 <br>
+1 z = -4 <br>
+2 BLE 10, x, 8 <br>
+3 x = x + 2 <br>
+4 BLE x, z, 7 <br>
+5 z = z + 1 <br>
+6 branch 4 <br>
+7 branch 2 <br>
+8 c = 1 <br>
+
+ <I haven't copied intermediate values here as there were many> <Other Examples are at last> <br>
+
+After complete execution: <br>
+Garbage values are:  [-4, 10, 2, 3, -3, -2, -1, 0, 5, 4, 7, 6, 9, 8] <br>
+Variable values are: <br>
+x  =  11 <br>
+z  =  11
+c  =  1
+___________________________
+
+
+# So this case and any case with any number of nesting can be handled <br>
+
+
+### Case when there is no statement after end of while loop <br>
+x = 1                                  0 x = 1 <br>
+while x < 10 :                         1 BLE 10, x , 4 ==> executuion stops if <br>
+    x = x + 2                          2 x = x + 2      referred index exceeds length of instruction list <br>
+                                       3 branch 1 <br>
+##RESULT <br>
+Instruction List: <br>
+0 x = 1 <br>
+1 BLE 10, x, 4 <br>
+2 x = x + 2 <br>
+3 branch 1 <br>
+_________________________________________
+Garbage values are:  [1, 10, 2] <br>
+Variable values are: <br>
+x  =  3 <br>
+________________________________________
+_________________________________________
+Garbage values are:  [1, 10, 2, 3] <br>
+Variable values are: <br>
+x  =  5 <br>
+________________________________________
+_________________________________________
+Garbage values are:  [1, 10, 2, 3, 5] <br>
+Variable values are: <br>
+x  =  7 <br>
+________________________________________
+_________________________________________
+Garbage values are:  [1, 10, 2, 3, 5, 7] <br>
+Variable values are: <br>
+x  =  9 <br>
+________________________________________
+_________________________________________
+Garbage values are:  [1, 10, 2, 3, 5, 7, 9] <br>
+Variable values are: <br>
+x  =  11 <br>
+________________________________________
+
+After complete execution: <br>
+Garbage values are:  [1, 10, 2, 3, 5, 7, 9] <br>
+Variable values are: <br>
+x  =  11 <br>
+
+
+
+
+
+# for such a case we have implemented check that last element of tab_list = 0 <br>
+
+
+
+
+
+
+
 # EXAMPLE 1
 a = 10</br>
 b = 1</br>
