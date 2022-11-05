@@ -125,7 +125,7 @@ c  =  1
 
 
 # Example2
-i = 0
+i = 0 </br>
 while i < 3 :
     j = 1
     while j < 2 :
@@ -200,4 +200,4 @@ x  =  3
 y  =  0
 
 
-.
+
