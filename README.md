@@ -39,83 +39,83 @@ the code will not provide final result if stuck in a while loop that doesn't ter
 SAMPLE TESTCASES AND EXPLANATION :
 # Test Cases
 # EXAMPLE 1
-a = 10
-b = 1
-while a > b :
-    a = a - 1
-c = 1
+a = 10</br>
+b = 1</br>
+while a > b :</br>
+    a = a - 1</br>
+c = 1</br>
 
 
-RESULT
+RESULT</br>
 
-Instruction List:
-0 a = 10
-1 b = 1
-2 BLE a, b, 5
-3 a = a - 1
-4 branch 2
-5 c = 1
+Instruction List:</br>
+0 a = 10</br>
+1 b = 1</br>
+2 BLE a, b, 5</br>
+3 a = a - 1</br>
+4 branch 2</br>
+5 c = 1</br>
 _________________________________________
-Garbage values are:  [10]
-Variable values are:
-a  =  9
-b  =  1
+Garbage values are:  [10]</br>
+Variable values are:</br>
+a  =  9</br>
+b  =  1</br>
 ________________________________________
 _________________________________________
-Garbage values are:  [10, 9]
-Variable values are:
-a  =  8
-b  =  1
+Garbage values are:  [10, 9]</br>
+Variable values are:</br>
+a  =  8</br>
+b  =  1</br>
 ________________________________________
 _________________________________________
-Garbage values are:  [10, 9, 8]
-Variable values are:
-a  =  7
-b  =  1
+Garbage values are:  [10, 9, 8]</br>
+Variable values are:</br>
+a  =  7</br>
+b  =  1</br>
 ________________________________________
 _________________________________________
-Garbage values are:  [10, 9, 8, 7]
-Variable values are:
-a  =  6
-b  =  1
+Garbage values are:  [10, 9, 8, 7]</br>
+Variable values are:</br>
+a  =  6</br>
+b  =  1</br>
 ________________________________________
 _________________________________________
-Garbage values are:  [10, 9, 8, 7, 6]
-Variable values are:
-a  =  5
-b  =  1
+Garbage values are:  [10, 9, 8, 7, 6]</br>
+Variable values are:</br>
+a  =  5</br>
+b  =  1</br>
 ________________________________________
 _________________________________________
-Garbage values are:  [10, 9, 8, 7, 6, 5]
-Variable values are:
-a  =  4
-b  =  1
+Garbage values are:  [10, 9, 8, 7, 6, 5]</br>
+Variable values are:</br>
+a  =  4</br>
+b  =  1</br>
 ________________________________________
 _________________________________________
-Garbage values are:  [10, 9, 8, 7, 6, 5, 4]
-Variable values are:
-a  =  3
-b  =  1
+Garbage values are:  [10, 9, 8, 7, 6, 5, 4]</br>
+Variable values are:</br>
+a  =  3</br>
+b  =  1</br>
 ________________________________________
 _________________________________________
-Garbage values are:  [10, 9, 8, 7, 6, 5, 4, 3]
-Variable values are:
-a  =  2
-b  =  1
+Garbage values are:  [10, 9, 8, 7, 6, 5, 4, 3]</br>
+Variable values are:</br>
+a  =  2</br>
+b  =  1</br>
 ________________________________________
 _________________________________________
-Garbage values are:  [10, 9, 8, 7, 6, 5, 4, 3, 2]
-Variable values are:
-a  =  1
-b  =  1
+Garbage values are:  [10, 9, 8, 7, 6, 5, 4, 3, 2]</br>
+Variable values are:</br>
+a  =  1</br>
+b  =  1</br>
 ________________________________________
 
-After complete execution:
-Garbage values are:  [10, 9, 8, 7, 6, 5, 4, 3, 2]
-Variable values are:
-a  =  1
-b  =  1
-c  =  1
+After complete execution:</br>
+Garbage values are:  [10, 9, 8, 7, 6, 5, 4, 3, 2]</br>
+Variable values are:</br>
+a  =  1</br>
+b  =  1</br>
+c  =  1</br>
 
 
 
@@ -126,78 +126,78 @@ c  =  1
 
 # Example2
 i = 0 </br>
-while i < 3 :
-    j = 1
-    while j < 2 :
-        x = i + j
-        j = j + 1
-    i = i + 1
-y = 0
+while i < 3 :</br>
+    j = 1</br>
+    while j < 2 :</br>
+        x = i + j</br>
+        j = j + 1</br>
+    i = i + 1</br>
+y = 0</br></br>
 
 
 
-RESULT
-Instruction List:
-0 i = 0
-1 BLE 3, i, 9
-2 j = 1
-3 BLE 2, j, 7
-4 x = i + j
-5 j = j + 1
-6 branch 3
-7 i = i + 1
-8 branch 1
-9 y = 0
+RESULT</br>
+Instruction List:</br>
+0 i = 0</br>
+1 BLE 3, i, 9</br>
+2 j = 1</br>
+3 BLE 2, j, 7</br>
+4 x = i + j</br>
+5 j = j + 1</br>
+6 branch 3</br>
+7 i = i + 1</br>
+8 branch 1</br>
+9 y = 0</br>
 _________________________________________
-Garbage values are:  [3]
-Variable values are:
-i  =  0
-j  =  2
-x  =  1
+Garbage values are:  [3]</br>
+Variable values are:</br>
+i  =  0</br>
+j  =  2</br>
+x  =  1</br>
 ________________________________________
 _________________________________________
-Garbage values are:  [0, 3]
-Variable values are:
-i  =  1
-j  =  2
-x  =  1
+Garbage values are:  [0, 3]</br>
+Variable values are:</br>
+i  =  1</br>
+j  =  2</br>
+x  =  1</br>
 ________________________________________
 _________________________________________
-Garbage values are:  [0, 3]
-Variable values are:
-i  =  1
-j  =  2
-x  =  2
+Garbage values are:  [0, 3]</br>
+Variable values are:</br>
+i  =  1</br>
+j  =  2</br>
+x  =  2</br>
 ________________________________________
 _________________________________________
-Garbage values are:  [0, 3, 1]
-Variable values are:
-i  =  2
-j  =  2
-x  =  2
+Garbage values are:  [0, 3, 1]</br>
+Variable values are:</br>
+i  =  2</br>
+j  =  2</br>
+x  =  2</br>
 ________________________________________
 _________________________________________
-Garbage values are:  [0, 1]
-Variable values are:
-i  =  2
-j  =  2
-x  =  3
+Garbage values are:  [0, 1]</br>
+Variable values are:</br>
+i  =  2</br>
+j  =  2</br>
+x  =  3</br>
 ________________________________________
 _________________________________________
-Garbage values are:  [0, 1]
-Variable values are:
-i  =  3
-j  =  2
-x  =  3
+Garbage values are:  [0, 1]</br>
+Variable values are:</br>
+i  =  3</br>
+j  =  2</br>
+x  =  3</br>
 ________________________________________
 
-After complete execution:
-Garbage values are:  [1]
-Variable values are:
-i  =  3
-j  =  2
-x  =  3
-y  =  0
+After complete execution:</br>
+Garbage values are:  [1]</br>
+Variable values are:</br>
+i  =  3</br>
+j  =  2</br>
+x  =  3</br>
+y  =  0</br>
 
 
 
