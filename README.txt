@@ -1,5 +1,4 @@
 
-## To exit if error is found ## Link to this was given by mam on Piazza in assignment 5A
 ### to add or and in while???
 ## Errors:
 ### if " : " is missing at end of while statement
